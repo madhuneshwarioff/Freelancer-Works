@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Freelancers | Freelancer Works</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Freelancer Works</h1>
+    <nav>
+    <div class="dropdown">
+      <a href="hire-freelancers.html">Hire Freelancers ▾</a>
+      <div class="dropdown-content">
+        <div class="drop-card">
+          <a href="hire-freelancers.html?filter=skill">
+          <h4>By skill</h4>
+          <p>Looking for a freelancer with a specific skill? Start here.</p>
+          </a>
+        </div>
+        <div class="drop-card">
+          <a href="hire-freelancers.html?filter=location">
+          <h4>By location</h4>
+          <p>Search for freelancers based on their location and timezone.</p>
+          </a>
+        </div>
+        <div class="drop-card">
+          <a href="hire-freelancers.html?filter=category">
+          <h4>By category</h4>
+          <p>Find freelancers that suit a certain project category.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Find Work ▾</a>
+      <div class="dropdown-content">
+        <div class="drop-card">
+          <h4>By skill</h4>
+          <p>Search for work that requires a particular skill.</p>
+        </div>
+        <div class="drop-card">
+          <h4>By language</h4>
+          <p>Find projects that are in your language.</p>
+        </div>
+        <div class="drop-card">
+          <h4>Featured jobs</h4>
+          <p>Explore our top featured projects.</p>
+        </div>
+        <div class="drop-card">
+          <h4>Find contests</h4>
+          <p>Join contests and showcase your talent.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Solutions ▾</a>
+      <div class="dropdown-content">
+        <div class="drop-card">
+          <h4>Enterprise</h4>
+          <p>Power your competitive advantage with enterprise solutions.</p>
+        </div>
+        <div class="drop-card">
+          <h4>Field Services</h4>
+          <p>Deliver expertise worldwide at scale - on demand.</p>
+        </div>
+        <div class="drop-card">
+          <h4>Freelancer API</h4>
+          <p>Access a cloud workforce of skilled freelancers.</p>
+        </div>
+        <div class="drop-card">
+          <h4>AI for business</h4>
+          <p>Let AI experts transform your business.</p>
+        </div>
+      </div>
+    </div>
+     <a href="index.html" style="margin-right:10px;">Home</a>
+
+    <a href="login.html">Log In</a>
+    <a href="signup.html" class="signup">Sign Up</a>
+    <button class="btn-primary">Post a Project</button>
+  </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Find the Right Freelancer for Your Project</h2>
+    <p>Explore top talent in Web Development, Design, and Data & AI.</p>
+  </section>
+
+  <section class="filters">
+    <h2>Filter by Category</h2>
+    <button class="filter-btn" data-category="all">All</button>
+    <button class="filter-btn" data-category="web">Web Developers</button>
+    <button class="filter-btn" data-category="design">Designers</button>
+    <button class="filter-btn" data-category="data">Data & AI Experts</button>
+  </section>
+
+  <section class="section">
+    <div class="freelancer-list">
+
+      <!-- Web Developers -->
+      <div class="card" data-category="web">
+        <h3>Rohit Sharma</h3>
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript, React</p>
+        <p>Experienced front-end developer creating responsive and modern UIs.</p>
+      </div>
+      <div class="card" data-category="web">
+        <h3>Neha Verma</h3>
+        <p><strong>Skills:</strong> Node.js, Express, MongoDB</p>
+        <p>Full-stack developer who builds scalable backend systems.</p>
+      </div>
+      <div class="card" data-category="web">
+        <h3>Arjun Reddy</h3>
+        <p><strong>Skills:</strong> Next.js, Tailwind, MySQL</p>
+        <p>Modern web expert with elegant design sense.</p>
+      </div>
+
+      <!-- Designers -->
+      <div class="card" data-category="design">
+        <h3>Aditi Singh</h3>
+        <p><strong>Skills:</strong> Figma, Photoshop, Illustrator</p>
+        <p>UI/UX designer crafting smooth and appealing experiences.</p>
+      </div>
+      <div class="card" data-category="design">
+        <h3>Kiran Das</h3>
+        <p><strong>Skills:</strong> Logo Design, Branding, Adobe XD</p>
+        <p>Specializes in brand identity and logo design with a creative edge.</p>
+      </div>
+      <div class="card" data-category="design">
+        <h3>Sara Thomas</h3>
+        <p><strong>Skills:</strong> Motion Design, After Effects</p>
+        <p>Designs engaging interfaces and interactive motion graphics.</p>
+      </div>
+
+      <!-- Data & AI Experts -->
+      <div class="card" data-category="data">
+        <h3>Manoj Kumar</h3>
+        <p><strong>Skills:</strong> Python, Machine Learning, Pandas</p>
+        <p>Data scientist with 4+ years experience building ML models.</p>
+      </div>
+      <div class="card" data-category="data">
+        <h3>Priya Nair</h3>
+        <p><strong>Skills:</strong> SQL, Power BI, Tableau</p>
+        <p>Business intelligence expert delivering data-driven insights.</p>
+      </div>
+      <div class="card" data-category="data">
+        <h3>Rahul Mehta</h3>
+        <p><strong>Skills:</strong> Deep Learning, NLP, TensorFlow</p>
+        <p>AI developer specializing in neural networks and NLP.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Freelancer Works | Built by Madhuneshwari</p>
+  </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".freelancer-list .card");
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const category = btn.dataset.category;
+
+      // Remove active class from all buttons
+      filterButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      cards.forEach(card => {
+        if (category === "all" || card.dataset.category === category) {
+          card.style.display = "block";
+          card.classList.add("fade-in");
+        } else {
+          card.style.display = "none";
+          card.classList.remove("fade-in");
+        }
+      });
+    });
+  });
+});
+
+</script>
+</body>
+</html>

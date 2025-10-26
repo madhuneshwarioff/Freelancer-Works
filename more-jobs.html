@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More Jobs | Freelancer Works</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .search-filter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 30px auto;
+      flex-wrap: wrap;
+    }
+
+    .search-filter input, .search-filter select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 250px;
+      font-size: 1rem;
+    }
+
+    .job-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      width: 90%;
+      margin: auto;
+    }
+
+    .job-box {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .job-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    }
+
+    .job-box h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .job-box p {
+      color: #555;
+    }
+
+    .apply-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .apply-btn:hover {
+      background-color: #0056b3;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header (same as index) -->
+  <header>
+    <h1>Freelancer Works</h1>
+    <nav>
+      <div class="dropdown">
+        <a href="hire-freelancers.html">Hire Freelancers ▾</a>
+        <div class="dropdown-content">
+          <div class="drop-card"><h4>By skill</h4><p>Find freelancers by specific skills.</p></div>
+          <div class="drop-card"><h4>By location</h4><p>Search freelancers by region.</p></div>
+          <div class="drop-card"><h4>By category</h4><p>Find suitable professionals for your project.</p></div>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">Find Work ▾</a>
+        <div class="dropdown-content">
+          <div class="drop-card"><h4>By skill</h4><p>Find jobs that fit your expertise.</p></div>
+          <div class="drop-card"><h4>By language</h4><p>Work in your preferred language.</p></div>
+          <div class="drop-card"><h4>Featured jobs</h4><p>Top picks for freelancers.</p></div>
+          <div class="drop-card"><h4>Find contests</h4><p>Showcase your skills in contests.</p></div>
+        </div>
+      </div>
+      <a href="index.html" style="margin-right:10px;">Home</a>
+      <a href="login.html">Log In</a>
+      <a href="signup.html" class="signup">Sign Up</a>
+      <button class="btn-primary">Post a Project</button>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Explore More Job Opportunities</h2>
+
+    <!-- Search & Filter -->
+    <div class="search-filter">
+      <input type="text" id="searchInput" placeholder="Search jobs...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="development">Development</option>
+        <option value="design">Design</option>
+        <option value="writing">Writing</option>
+        <option value="marketing">Marketing</option>
+        <option value="data">Data</option>
+      </select>
+    </div>
+
+    <!-- Job Listings -->
+    <div class="job-list" id="jobList">
+      <!-- Jobs will be dynamically generated below -->
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Freelancer Works | Built by Madhuneshwari</p>
+  </footer>
+
+  <script>
+    const jobs = [
+      { title: "Frontend Developer", desc: "Build modern responsive UIs using React and Tailwind.", category: "development" },
+      { title: "Backend Developer", desc: "Work with Node.js, Express, and databases.", category: "development" },
+      { title: "Full Stack Engineer", desc: "Develop both frontend and backend of applications.", category: "development" },
+      { title: "UI/UX Designer", desc: "Design intuitive and beautiful interfaces.", category: "design" },
+      { title: "Graphic Designer", desc: "Create brand visuals and marketing materials.", category: "design" },
+      { title: "Logo Designer", desc: "Craft impactful and memorable logos.", category: "design" },
+      { title: "Content Writer", desc: "Produce engaging blog and website content.", category: "writing" },
+      { title: "Copywriter", desc: "Write compelling ad copies and marketing content.", category: "writing" },
+      { title: "Technical Writer", desc: "Create user manuals and documentation.", category: "writing" },
+      { title: "SEO Specialist", desc: "Optimize websites for search engine visibility.", category: "marketing" },
+      { title: "Digital Marketer", desc: "Run social media and ad campaigns.", category: "marketing" },
+      { title: "Social Media Manager", desc: "Grow audience across social platforms.", category: "marketing" },
+      { title: "Data Analyst", desc: "Analyze data and prepare insights.", category: "data" },
+      { title: "Data Scientist", desc: "Build predictive models and AI pipelines.", category: "data" },
+      { title: "Machine Learning Engineer", desc: "Develop machine learning models.", category: "data" },
+      { title: "WordPress Developer", desc: "Create and customize WordPress sites.", category: "development" },
+      { title: "App Developer", desc: "Develop Android and iOS mobile apps.", category: "development" },
+      { title: "Product Designer", desc: "Design entire product experience.", category: "design" },
+      { title: "Creative Writer", desc: "Write fiction, blogs, and creative copy.", category: "writing" },
+      { title: "Brand Strategist", desc: "Develop branding and marketing strategies.", category: "marketing" },
+      { title: "Data Engineer", desc: "Build and maintain data infrastructure.", category: "data" },
+      { title: "QA Tester", desc: "Test and ensure software quality.", category: "development" },
+      { title: "Motion Graphics Designer", desc: "Create engaging motion visuals.", category: "design" },
+      { title: "Email Marketer", desc: "Build and automate email campaigns.", category: "marketing" },
+      { title: "Blog Editor", desc: "Edit and proofread online publications.", category: "writing" },
+      { title: "AI Prompt Engineer", desc: "Design prompts for AI systems.", category: "data" },
+      { title: "UX Researcher", desc: "Analyze user experience and feedback.", category: "design" },
+      { title: "Game Developer", desc: "Develop 2D/3D games using Unity or Unreal.", category: "development" },
+      { title: "Video Editor", desc: "Edit videos for content creators and brands.", category: "design" },
+      { title: "Market Research Analyst", desc: "Study market trends for brands.", category: "marketing" }
+    ];
+
+    const jobList = document.getElementById('jobList');
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+
+    function renderJobs(filteredJobs) {
+      jobList.innerHTML = '';
+      filteredJobs.forEach(job => {
+        const jobBox = document.createElement('div');
+        jobBox.classList.add('job-box');
+        jobBox.innerHTML = `
+          <h3>${job.title}</h3>
+          <p>${job.desc}</p>
+          <button class="apply-btn">Apply</button>
+        `;
+        jobList.appendChild(jobBox);
+      });
+    }
+
+    function filterJobs() {
+      const query = searchInput.value.toLowerCase();
+      const category = categoryFilter.value;
+      const filtered = jobs.filter(job => {
+        const matchesSearch = job.title.toLowerCase().includes(query) || job.desc.toLowerCase().includes(query);
+        const matchesCategory = category === 'all' || job.category === category;
+        return matchesSearch && matchesCategory;
+      });
+      renderJobs(filtered);
+    }
+
+    searchInput.addEventListener('input', filterJobs);
+    categoryFilter.addEventListener('change', filterJobs);
+
+    renderJobs(jobs);
+  </script>
+
+</body>
+</html>

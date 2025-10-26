@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Work | Freelancer Works</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Freelancer Works</h1>
+    <nav>
+    <div class="dropdown">
+      <a href="hire-freelancers.html">Hire Freelancers ▾</a>
+      <div class="dropdown-content">
+        <div class="drop-card">
+          <a href="hire-freelancers.html?filter=skill">
+          <h4>By skill</h4>
+          <p>Looking for a freelancer with a specific skill? Start here.</p>
+          </a>
+        </div>
+        <div class="drop-card">
+          <a href="hire-freelancers.html?filter=location">
+          <h4>By location</h4>
+          <p>Search for freelancers based on their location and timezone.</p>
+          </a>
+        </div>
+        <div class="drop-card">
+          <a href="hire-freelancers.html?filter=category">
+          <h4>By category</h4>
+          <p>Find freelancers that suit a certain project category.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Find Work ▾</a>
+      <div class="dropdown-content">
+        <div class="drop-card">
+          <h4>By skill</h4>
+          <p>Search for work that requires a particular skill.</p>
+        </div>
+        <div class="drop-card">
+          <h4>By language</h4>
+          <p>Find projects that are in your language.</p>
+        </div>
+        <div class="drop-card">
+          <h4>Featured jobs</h4>
+          <p>Explore our top featured projects.</p>
+        </div>
+        <div class="drop-card">
+          <h4>Find contests</h4>
+          <p>Join contests and showcase your talent.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a href="#">Solutions ▾</a>
+      <div class="dropdown-content">
+        <div class="drop-card">
+          <h4>Enterprise</h4>
+          <p>Power your competitive advantage with enterprise solutions.</p>
+        </div>
+        <div class="drop-card">
+          <h4>Field Services</h4>
+          <p>Deliver expertise worldwide at scale - on demand.</p>
+        </div>
+        <div class="drop-card">
+          <h4>Freelancer API</h4>
+          <p>Access a cloud workforce of skilled freelancers.</p>
+        </div>
+        <div class="drop-card">
+          <h4>AI for business</h4>
+          <p>Let AI experts transform your business.</p>
+        </div>
+      </div>
+    </div>
+     <a href="index.html" style="margin-right:10px;">Home</a>
+
+    <a href="login.html">Log In</a>
+    <a href="signup.html" class="signup">Sign Up</a>
+    <button class="btn-primary">Post a Project</button>
+  </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Discover Your Next Freelance Opportunity</h2>
+    <p>Browse top projects in Web Development, Design, and Data & AI.</p>
+  </section>
+
+  <section class="filters">
+    <h2>Filter by Category</h2>
+    <button class="filter-btn" data-category="all">All</button>
+    <button class="filter-btn" data-category="web">Web Development</button>
+    <button class="filter-btn" data-category="design">Design</button>
+    <button class="filter-btn" data-category="data">Data & AI</button>
+  </section>
+
+  <section class="section">
+    <div class="freelancer-list">
+
+      <div class="card" data-category="web">
+  <h3>Frontend Developer Needed</h3>
+  <p><strong>Skills:</strong> React, CSS, Responsive Design</p>
+  <p>Build a modern portfolio website for a startup founder.</p>
+  <p>
+    <a href="https://unstop.com/c/ft-analytics-1586202" target="_blank">Fortune Analytics</a><br />
+    Pune<br />
+    Updated On: Oct 23, 2025<br />
+    Salary: 4LPA - 6LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="backend">
+  <h3>Backend Developer</h3>
+  <p><strong>Skills:</strong> Node.js, Express, MongoDB</p>
+  <p>Develop REST APIs for a job listing app.</p>
+  <p>
+    <a href="https://example.com" target="_blank">Datasys Solutions</a><br />
+    Bangalore<br />
+    Updated On: Oct 20, 2025<br />
+    Salary: 5LPA - 7LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="design">
+  <h3>UI/UX Designer Needed</h3>
+  <p><strong>Skills:</strong> Figma, Adobe XD</p>
+  <p>Design clean mobile app interfaces for fintech users.</p>
+  <p>
+    <a href="https://anotherexample.com" target="_blank">Creative Labs</a><br />
+    Mumbai<br />
+    Updated On: Oct 22, 2025<br />
+    Salary: 6LPA - 8LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="data">
+  <h3>Data Analyst</h3>
+  <p><strong>Skills:</strong> SQL, Power BI</p>
+  <p>Analyze user data and create insightful dashboards.</p>
+  <p>
+    <a href="https://datajobs.com" target="_blank">Insight Analytics</a><br />
+    Hyderabad<br />
+    Updated On: Oct 21, 2025<br />
+    Salary: 4.5LPA - 6.5LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="machine-learning">
+  <h3>ML Engineer</h3>
+  <p><strong>Skills:</strong> Python, TensorFlow, NLP</p>
+  <p>Build ML models for sentiment analysis.</p>
+  <p>
+    <a href="https://mlcareer.com" target="_blank">Alpha Tech</a><br />
+    Chennai<br />
+    Updated On: Oct 18, 2025<br />
+    Salary: 7LPA - 10LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="mobile">
+  <h3>Mobile App Developer</h3>
+  <p><strong>Skills:</strong> Flutter, Firebase, iOS</p>
+  <p>Develop cross-platform mobile apps for fitness.</p>
+  <p>
+    <a href="https://mobiledevs.com" target="_blank">Strive Mobile</a><br />
+    Pune<br />
+    Updated On: Oct 22, 2025<br />
+    Salary: 5LPA - 7LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="cloud">
+  <h3>Cloud Engineer</h3>
+  <p><strong>Skills:</strong> AWS, Docker, Kubernetes</p>
+  <p>Manage scalable cloud infrastructure and services.</p>
+  <p>
+    <a href="https://cloudpros.com" target="_blank">Nimbus Cloud</a><br />
+    Bengaluru<br />
+    Updated On: Oct 20, 2025<br />
+    Salary: 6LPA - 9LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="qa">
+  <h3>QA Engineer</h3>
+  <p><strong>Skills:</strong> Selenium, Manual Testing</p>
+  <p>Build test scripts and maintain quality.</p>
+  <p>
+    <a href="https://softtesters.com" target="_blank">QualitySoft</a><br />
+    Chennai<br />
+    Updated On: Oct 19, 2025<br />
+    Salary: 4LPA - 5.5LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="devops">
+  <h3>DevOps Specialist</h3>
+  <p><strong>Skills:</strong> Jenkins, Terraform</p>
+  <p>Manage CI/CD pipelines and automation.</p>
+  <p>
+    <a href="https://devopshub.com" target="_blank">Pipeline Pros</a><br />
+    Hyderabad<br />
+    Updated On: Oct 22, 2025<br />
+    Salary: 6LPA - 8LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+<div class="card" data-category="marketing">
+  <h3>Digital Marketing Expert</h3>
+  <p><strong>Skills:</strong> SEO, Google Ads</p>
+  <p>Plan and execute digital marketing campaigns.</p>
+  <p>
+    <a href="https://marketingpro.com" target="_blank">MarketingPro</a><br />
+    Delhi<br />
+    Updated On: Oct 22, 2025<br />
+    Salary: 3LPA - 5LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="data">
+  <h3>Data Scientist</h3>
+  <p><strong>Skills:</strong> R, Python, Machine Learning</p>
+  <p>Build predictive models and analyze big data.</p>
+  <p>
+    <a href="https://datasciencehub.com" target="_blank">DataScience Hub</a><br />
+    Bangalore<br />
+    Updated On: Oct 25, 2025<br />
+    Salary: 8LPA - 12LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="content">
+  <h3>Content Writer</h3>
+  <p><strong>Skills:</strong> Blogging, SEO Writing</p>
+  <p>Write marketing content and blogs.</p>
+  <p>
+    <a href="https://creativecontent.com" target="_blank">Creative Content</a><br />
+    Chennai<br />
+    Updated On: Oct 20, 2025<br />
+    Salary: 3.5LPA - 4.5LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="mobile">
+  <h3>Android Developer</h3>
+  <p><strong>Skills:</strong> Kotlin, Java</p>
+  <p>Develop native Android applications.</p>
+  <p>
+    <a href="https://appbuilders.com" target="_blank">App Builders</a><br />
+    Hyderabad<br />
+    Updated On: Oct 24, 2025<br />
+    Salary: 6LPA - 7.5LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="qa">
+  <h3>Automation Tester</h3>
+  <p><strong>Skills:</strong> Selenium, Test Automation</p>
+  <p>Write scripts and maintain automated tests.</p>
+  <p>
+    <a href="https://qaexperts.com" target="_blank">QA Experts</a><br />
+    Pune<br />
+    Updated On: Oct 21, 2025<br />
+    Salary: 4.8LPA - 6LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="security">
+  <h3>Cybersecurity Analyst</h3>
+  <p><strong>Skills:</strong> Network Security, Penetration Testing</p>
+  <p>Protect systems against cyber threats.</p>
+  <p>
+    <a href="https://securesystems.com" target="_blank">Secure Systems</a><br />
+    Delhi<br />
+    Updated On: Oct 23, 2025<br />
+    Salary: 7LPA - 9LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="ai">
+  <h3>AI Researcher</h3>
+  <p><strong>Skills:</strong> Deep Learning, Python</p>
+  <p>Research and develop AI algorithms.</p>
+  <p>
+    <a href="https://aitech.com" target="_blank">AI Tech</a><br />
+    Bangalore<br />
+    Updated On: Oct 22, 2025<br />
+    Salary: 10LPA - 14LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="cloud">
+  <h3>Cloud Architect</h3>
+  <p><strong>Skills:</strong> AWS, Azure</p>
+  <p>Design scalable cloud infrastructures.</p>
+  <p>
+    <a href="https://cloudarchitects.com" target="_blank">Cloud Architects</a><br />
+    Mumbai<br />
+    Updated On: Oct 23, 2025<br />
+    Salary: 9LPA - 12LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="project-management">
+  <h3>Project Manager</h3>
+  <p><strong>Skills:</strong> Agile, Scrum</p>
+  <p>Manage software development teams.</p>
+  <p>
+    <a href="https://pmleaders.com" target="_blank">PM Leaders</a><br />
+    Chennai<br />
+    Updated On: Oct 25, 2025<br />
+    Salary: 8LPA - 11LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="technical-writing">
+  <h3>Technical Writer</h3>
+  <p><strong>Skills:</strong> Documentation, API Writing</p>
+  <p>Create product manuals and documentation.</p>
+  <p>
+    <a href="https://techwriters.com" target="_blank">Tech Writers</a><br />
+    Bangalore<br />
+    Updated On: Oct 20, 2025<br />
+    Salary: 4LPA - 5LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+<div class="card" data-category="hr">
+  <h3>HR Manager</h3>
+  <p><strong>Skills:</strong> Recruitment, Employee Relations</p>
+  <p>Manage hiring and employee engagement programs.</p>
+  <p>
+    <a href="https://hrconsulting.com" target="_blank">HR Consulting</a><br />
+    Mumbai<br />
+    Updated On: Oct 22, 2025<br />
+    Salary: 7LPA - 9LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="finance">
+  <h3>Financial Analyst</h3>
+  <p><strong>Skills:</strong> Excel, Financial Modeling</p>
+  <p>Analyze financial data to inform business decisions.</p>
+  <p>
+    <a href="https://financepros.com" target="_blank">Finance Pros</a><br />
+    Bangalore<br />
+    Updated On: Oct 20, 2025<br />
+    Salary: 5LPA - 7LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="sales">
+  <h3>Sales Executive</h3>
+  <p><strong>Skills:</strong> Client Relations, Negotiation</p>
+  <p>Drive sales and manage client accounts.</p>
+  <p>
+    <a href="https://salesforce.com" target="_blank">Sales Force</a><br />
+    Delhi<br />
+    Updated On: Oct 19, 2025<br />
+    Salary: 4LPA - 6LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="graphic-design">
+  <h3>Graphic Designer</h3>
+  <p><strong>Skills:</strong> Photoshop, Illustrator</p>
+  <p>Create visual content for marketing materials.</p>
+  <p>
+    <a href="https://designstudio.com" target="_blank">Design Studio</a><br />
+    Pune<br />
+    Updated On: Oct 21, 2025<br />
+    Salary: 4.5LPA - 6LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="content-writing">
+  <h3>Content Specialist</h3>
+  <p><strong>Skills:</strong> Copywriting, SEO</p>
+  <p>Develop and manage content strategy.</p>
+  <p>
+    <a href="https://contentworks.com" target="_blank">Content Works</a><br />
+    Chennai<br />
+    Updated On: Oct 20, 2025<br />
+    Salary: 3.8LPA - 5LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="customer-support">
+  <h3>Customer Support Executive</h3>
+  <p><strong>Skills:</strong> Communication, CRM</p>
+  <p>Assist customers and handle inquiries.</p>
+  <p>
+    <a href="https://customersupport.com" target="_blank">Customer Support Inc.</a><br />
+    Hyderabad<br />
+    Updated On: Oct 23, 2025<br />
+    Salary: 3.5LPA - 4.5LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="business-analysis">
+  <h3>Business Analyst</h3>
+  <p><strong>Skills:</strong> Requirements Gathering, SWOT Analysis</p>
+  <p>Analyze business processes and requirements.</p>
+  <p>
+    <a href="https://businesssolutions.com" target="_blank">Business Solutions</a><br />
+    Bangalore<br />
+    Updated On: Oct 22, 2025<br />
+    Salary: 6LPA - 8LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="systems-administration">
+  <h3>System Administrator</h3>
+  <p><strong>Skills:</strong> Linux, Windows Server</p>
+  <p>Maintain IT infrastructure and servers.</p>
+  <p>
+    <a href="https://sysadminpro.com" target="_blank">SysAdmin Pro</a><br />
+    Mumbai<br />
+    Updated On: Oct 21, 2025<br />
+    Salary: 5LPA - 7LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="business-development">
+  <h3>Business Development Manager</h3>
+  <p><strong>Skills:</strong> Lead Generation, Strategic Planning</p>
+  <p>Expand business partnerships and revenue.</p>
+  <p>
+    <a href="https://bdmco.com" target="_blank">BDM Co.</a><br />
+    Pune<br />
+    Updated On: Oct 23, 2025<br />
+    Salary: 7LPA - 9LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+<div class="card" data-category="product-management">
+  <h3>Product Manager</h3>
+  <p><strong>Skills:</strong> Agile, Roadmapping</p>
+  <p>Lead product development from concept to launch.</p>
+  <p>
+    <a href="https://productleaders.com" target="_blank">Product Leaders</a><br />
+    Chennai<br />
+    Updated On: Oct 22, 2025<br />
+    Salary: 8LPA - 11LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+<div class="card" data-category="content-marketing">
+  <h3>Content Marketing Specialist</h3>
+  <p><strong>Skills:</strong> SEO, Content Strategy, Social Media</p>
+  <p>Create and execute content marketing campaigns across platforms.</p>
+  <p>
+    <a href="https://contentmarketers.com" target="_blank">Content Marketers Inc.</a><br />
+    Bangalore<br />
+    Updated On: Oct 24, 2025<br />
+    Salary: 4LPA - 6LPA
+  </p>
+  <button class="btn-primary">Apply Now</button>
+</div>
+
+
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Freelancer Works | Built by Madhuneshwari</p>
+  </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".freelancer-list .card");
+
+  if (filterButtons.length && cards.length) {
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const category = btn.dataset.category;
+
+        // remove active from all buttons
+        filterButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        // toggle cards by category
+        cards.forEach(card => {
+          if (category === "all" || card.dataset.category === category) {
+            card.style.display = "block";
+            card.classList.add("fade-in");
+          } else {
+            card.style.display = "none";
+            card.classList.remove("fade-in");
+          }
+        });
+      });
+    });
+  }
+});
+
+</script>
+</body>
+</html>
